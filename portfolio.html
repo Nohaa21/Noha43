@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>محفظتي - نهي عادل</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: cyan;
+      margin-bottom: 30px;
+      text-shadow: 0 0 10px cyan;
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .project {
+      background-color: #111;
+      border: 1px solid #333;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #00ffff55;
+    }
+
+    .project h2 {
+      color: #00ffff;
+    }
+
+    .back-btn {
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: cyan;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 0 10px cyan;
+    }
+
+    .back-btn:hover {
+      background-color: #00e6e6;
+    }
+  </style>
+</head>
+<body>
+  <h1>مشاريعي البسيطة جدًا</h1>
+
+  <div class="projects">
+    <div class="project">
+      <h2>مشروع تغيير لون الخلفية</h2>
+      <p>زر بسيط يغيّر لون خلفية الصفحة عند الضغط عليه. مثال ممتاز لتعلم التفاعل مع الصفحة باستخدام JavaScript.</p>
+      <!-- مشروع تغيير لون الخلفية -->
+<button onclick="changeBackground()">غيّر الخلفية</button>
+
+<script>
+  function changeBackground() {
+    document.body.style.backgroundColor =
+      document.body.style.backgroundColor === 'lightblue' ? 'white' : 'lightblue';
+  }
+</script>
+    </div>
+
+    <div class="project">
+      <h2>مشروع عداد أرقام</h2>
+      <p>زر يزود العداد كل مرة يتم الضغط عليه. بداية رائعة لفهم الأحداث في JavaScript.</p>
+      <!-- مشروع عداد أرقام -->
+<button onclick="incrementCounter()">ارقام</button>
+<p id="counter">0</p>
+
+<script>
+  let count = 0;
+  function incrementCounter() {
+    count++;
+    document.getElementById("counter").innerText = count;
+  }
+</script>
+    </div>
+
+    <div class="project">
+      <h2>مشروع رسالة حسب الوقت</h2>
+      <p>صفحة تعرض رسالة ترحيب مثل "صباح الخير" أو "مساء الخير" حسب توقيت جهازك. بسيط وذكي<!-- مشروع رسالة حسب الوقت -->
+<button onclick="showGreeting()">اعرض رسالة الترحيب</button>
+<p id="greeting"></p>
+
+<script>
+  function showGreeting() {
+    const hour = new Date().getHours();
+    let message = "";
+
+    if (hour < 12) {
+      message = "صباح الخير💐!";
+    } else if (hour < 18) {
+      message = "مساء الخير!";
+    } else {
+      message = "مساء الخير جداً!";
+    }
+
+    document.getElementById("greeting").innerText = message;
+  }
+</script>.</p>
+      
+    </div>
+  </div>
+
+  <a href="index.html" class="back-btn">⬅ رجوع للصفحة الرئيسية</a>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>التواصل معي</title>
+  <!-- رابط Font Awesome للأيقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 40px;
+      text-shadow: 0 0 10px white;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      margin: 30px auto;
+      max-width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px white;
+    }
+
+    input, textarea {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      background-color: #111;
+      color: white;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #bbb;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 15px;
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 10px white;
+    }
+
+    .back-button {
+      margin-top: 20px;
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background-color: transparent;
+      border: 1px solid white;
+      padding: 10px 20px;
+      border-radius: 15px;
+      transition: background 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .contact-info {
+      margin-top: 40px;
+      font-size: 18px;
+      line-height: 2.5;
+      color: #ccc;
+    }
+
+    .contact-info a {
+      color: #0ff;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-info i {
+      margin-left: 8px;
+      color: #0ff;
+    }
+  </style>
+</head>
+<body>
+  <h1>📬 تواصل معي</h1>
+
+  <form>
+    <input type="text" placeholder="الاسم" required><br>
+    <input type="email" placeholder="البريد الإلكتروني" required><br>
+    <textarea rows="5" placeholder="اكتب رسالتك هنا..." required></textarea><br>
+    <button type="submit">إرسال</button>
+  </form>
+
+  <div class="contact-info">
+    <p><i class="fab fa-whatsapp"></i> واتساب: <a href="https://wa.me/249997556086" target="_blank">+249997556086</a></p>
+    <p><i class="fas fa-envelope"></i> البريد الإلكتروني: <a href="mailto:nohaadil765.com">nohaadil765.com</a></p>
+    <p><i class="fab fa-instagram"></i> إنستغرام: <a href="https://instagram.com/n-o-h-17" target="_blank">n-o-h-17</a></p>
+  </div>
+
+  <a href="index.html" class="back-button">العودة للصفحة الرئيسية</a>
+</body>
+</html>
